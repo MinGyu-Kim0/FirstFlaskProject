@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hello Test</title></head>
+<body>
+  {% if name %}
+    <h1>Hello, {{ name }}</h1>
+  {% else %}
+    <h1>Hello, World!</h1>
+  {% endif %}
+
+  <p>{{ user_name | capitalize }}</p> <!-- 첫 글자를 대문자로 만든다. -->
+  <p>{{ story | truncate(100) }}</p> <!-- 문자열을 100자로 제한한다. -->
+  <p>{{ timestamp }}</p> <!-- 날짜 형식을 지정된 형태로 변환한다. -->
+</body>
+</html>

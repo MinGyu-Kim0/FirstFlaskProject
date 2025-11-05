@@ -1,0 +1,17 @@
+<!-- templates/fruits_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruits List</title>
+</head>
+<body>
+    <!-- jinja2 for 반목문 사용. 리스트나 딕셔너리같은 컬렉션의 요소들을 순회하여 출력 할 수 있다. -->
+    <h1>Fruits List</h1>
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ fruit }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
