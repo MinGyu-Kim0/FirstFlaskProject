@@ -7,5 +7,8 @@
 <body>
     <h1>Welcome to Flask!</h1>
     <img src="{{ url_for('static', filename='image.jpg') }}"alt="Example Image">
+
+    <!-- 정적 파일이 수정된 경우 정상적으로 반영하기 위해 version인자 사용하여 캐시문제 해결 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css', version='1.0') }}">
 </body>
 </html>
